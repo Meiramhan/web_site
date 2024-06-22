@@ -4,8 +4,8 @@
 
 {% block content %}
 <ul>
-    <li><a href="!#">Главная страница</a></li>
-    <li><a href="!#">О книгах</a></li>
+    <li><a href="{{ url_for('main.index') }}">Главная страница</a></li>
+    <li><a href="{{ url_for('about.about_books') }}">О книгах</a></li>
     <li><a href="{{ url_for('books.adding') }}">Добавление книги</a></li>
 </ul>
 {% endblock %}
