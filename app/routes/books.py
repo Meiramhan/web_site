@@ -5,7 +5,7 @@ from ..models.books import Books
 books = Blueprint('books', __name__)
 
 
-@books.route('/post/adding', methods=['POST', 'GET'])
+@books.route('/adding', methods=['POST', 'GET'])
 def adding():
     if request.method == 'POST':
         title = request.form['title']
